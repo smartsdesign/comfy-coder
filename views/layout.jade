@@ -1,0 +1,24 @@
+doctype html
+html(ng-app='glosApp')
+  head
+    title= title
+    base(href='/')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/dist/styles.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js')
+    script(src='/javascripts/de-app.js')
+    script(src='/javascripts/de-app-service.js')
+    script(src='/javascripts/de-app-routes.js')
+    script(src='/javascripts/de-main-ctrl.js')
+    script(src='/javascripts/de-defs-ctrl.js')
+  body
+    div(class='banner')
+        a(href= '/')
+            img(src= 'images/de_logo_navbar.png')
+    div(class= 'wrapper')
+        header
+            h3= title
+                h4= description
+        div(ng-view)
+    block content

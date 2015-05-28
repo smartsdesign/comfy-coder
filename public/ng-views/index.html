@@ -1,0 +1,12 @@
+<div>
+    <div class="filter">
+        <form>
+            <input type="text" name="filter" placeholder="Filter" ng-model="glossaryList.term">
+        </form>
+    </div>
+    <ul class="definition-list">
+        <li ng-repeat="item in main.glossaryList | filter:glossaryList">
+            <a href="/definition/{{item.itemId}}">{{item.term}}</a>
+        </li>
+    </ul>
+</div>
