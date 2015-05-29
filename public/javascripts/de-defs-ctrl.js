@@ -15,9 +15,11 @@
 
     function definitionsController($log, glossaryService){
 
+        var vm = this;
+
         var onSuccess = function(data){
-                vm.wordDefinition = data;
-                $log.log(vm.wordDefinition);
+                vm.wordDefinition = data[0].definitions[0];
+                console.log(vm.wordDefinition);
             },
 
             onErr = function(err){

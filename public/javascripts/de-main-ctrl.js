@@ -13,10 +13,8 @@
 		]);
 
 	function glosMainController($log, glossaryService){
-		var vm = this;
-
-		vm.message = "debug hello!";
-		$log.log(vm.message);
+		
+        var vm = this;
 
         var onSuccess = function(data){
                 vm.glossaryList = data[0].definitions;
