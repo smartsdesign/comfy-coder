@@ -412,6 +412,7 @@ body .wrapper ul li a {
 }
 body .wrapper ul li a:link,
 body .wrapper ul li a:visited {
+  color: #000;
   text-decoration: none;
 }
 body .wrapper ul li a:hover,
