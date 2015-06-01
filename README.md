@@ -6,7 +6,7 @@ To run the application locally,
 * install [Node](https://nodejs.org/download/) and [GIT](https://git-scm.com/downloads), if not already installed on your machine,
 * clone the repository. run `git clone https://github.com/smartsdesign/comfy-coder.git`, 
 * install all the dependencies. navigate to the root of folder where `package.json` resides, and run `npm install`,
-* start the server. run `node .\bin\www`,
+* start the server. run `node ./bin/www`,
 * nagivate to **localhost:3000** in the browser.
 
 **That's all**
