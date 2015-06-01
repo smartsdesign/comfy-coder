@@ -38,6 +38,15 @@ app.use('/', routes);
 app.use('/glossary', glossary);
 app.use('/users', users);
 
+//middleware: point to index page for all points of entry. - Fixes 404 errors om refresh
+//since routes are not .html pages, they will 404 if requested directly i.e not accessed via the index page.
+app.get('*', function(req, res){
+    res.render('index', { 
+    'title': 'Development terminology hub',
+    'description': 'A definition list of commonly used development terminology' 
+  });
+});
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   var err = new Error('Not Found');
