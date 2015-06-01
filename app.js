@@ -42,7 +42,7 @@ app.use('/users', users);
 //since routes are not .html pages, they will 404 if requested directly i.e not accessed via the index page.
 app.get('*', function(req, res){
     res.render('index', { 
-    'title': 'Development terminology hub',
+    'title': 'Web terminology wiki',
     'description': 'A definition list of commonly used development terminology' 
   });
 });
