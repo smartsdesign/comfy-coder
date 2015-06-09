@@ -12,6 +12,7 @@ var db = mongo.db('mongodb://smuhangi:JavaScript1@ds037581.mongolab.com:37581/di
 //routes modules
 var routes = require('./routes/index');
 var glossary = require('./routes/glossary');
+var addDefinition = require('./routes/add-term');
 var users = require('./routes/users');
 
 var app = express();

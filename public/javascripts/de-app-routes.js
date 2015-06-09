@@ -24,6 +24,11 @@
                 "controller": "definitionsController",
                 "controllerAs": "defs"
             })
+            .when('/add-term', {
+                "templateUrl": "ng-views/add-term.html",
+                "controller": "addTermController",
+                "controllerAs": "addterm"
+            })
             .otherwise({
                 "redirectTo": "/"
             });

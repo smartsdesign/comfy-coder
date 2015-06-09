@@ -5,7 +5,8 @@
         .module('glosApp', [
             'modGlosRoutes',
             'modGlosMainCtrl',
-            'modGlosDefsCtrl'
+            'modGlosDefsCtrl',
+            'modAddTermCtrl'
         ]);
 
 }());
