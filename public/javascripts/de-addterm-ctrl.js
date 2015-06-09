@@ -14,6 +14,8 @@
 
         function addTermController($log, glossaryService){
             var vm = this;
+            
+            vm.data = {};
         }
 
 }());

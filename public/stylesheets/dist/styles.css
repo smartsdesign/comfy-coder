@@ -473,3 +473,170 @@ body .wrapper ul li a:active {
 .definitions-wrapper .sub-section a:active {
   opacity: 0.5;
 }
+.add-term li {
+  margin-bottom: 15px;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.add-term li input,
+.add-term li textarea {
+  box-sizing: border-box;
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+}
+.add-term li input:focus,
+.add-term li textarea:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.add-term li input::-moz-placeholder,
+.add-term li textarea::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.add-term li input:-ms-input-placeholder,
+.add-term li textarea:-ms-input-placeholder {
+  color: #999999;
+}
+.add-term li input::-webkit-input-placeholder,
+.add-term li textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+.add-term li input[disabled],
+.add-term li textarea[disabled],
+.add-term li input[readonly],
+.add-term li textarea[readonly],
+fieldset[disabled] .add-term li input,
+fieldset[disabled] .add-term li textarea {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.add-term li input[disabled],
+.add-term li textarea[disabled],
+fieldset[disabled] .add-term li input,
+fieldset[disabled] .add-term li textarea {
+  cursor: not-allowed;
+}
+textarea.add-term li input,
+textarea.add-term li textarea {
+  height: auto;
+}
+.add-term li button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  float: right !important;
+}
+.add-term li button:focus,
+.add-term li button:active:focus,
+.add-term li button.active:focus,
+.add-term li button.focus,
+.add-term li button:active.focus,
+.add-term li button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.add-term li button:hover,
+.add-term li button:focus,
+.add-term li button.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.add-term li button:active,
+.add-term li button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.add-term li button.disabled,
+.add-term li button[disabled],
+fieldset[disabled] .add-term li button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.add-term li button:hover,
+.add-term li button:focus,
+.add-term li button.focus,
+.add-term li button:active,
+.add-term li button.active,
+.open > .dropdown-toggle.add-term li button {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.add-term li button:active,
+.add-term li button.active,
+.open > .dropdown-toggle.add-term li button {
+  background-image: none;
+}
+.add-term li button.disabled,
+.add-term li button[disabled],
+fieldset[disabled] .add-term li button,
+.add-term li button.disabled:hover,
+.add-term li button[disabled]:hover,
+fieldset[disabled] .add-term li button:hover,
+.add-term li button.disabled:focus,
+.add-term li button[disabled]:focus,
+fieldset[disabled] .add-term li button:focus,
+.add-term li button.disabled.focus,
+.add-term li button[disabled].focus,
+fieldset[disabled] .add-term li button.focus,
+.add-term li button.disabled:active,
+.add-term li button[disabled]:active,
+fieldset[disabled] .add-term li button:active,
+.add-term li button.disabled.active,
+.add-term li button[disabled].active,
+fieldset[disabled] .add-term li button.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.add-term li button .badge {
+  color: #ffffff;
+  background-color: #333333;
+}

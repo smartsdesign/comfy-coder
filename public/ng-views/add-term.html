@@ -1,8 +1,40 @@
 <div class="add-term">
     <div class="sub-section">
         <h4>Add term</h4>
-        <form action="">
-            
+        <pre>{{addterm.data}}</pre>
+        <form   
+            name="addtermForm"
+            novalidate
+        >
+            <ul>
+                <li>
+                    <label for="term">Term: </label>
+                    <input 
+                        type="text" 
+                        name="term" 
+                        placeholder="Enter term" 
+                        ng-model="addterm.data.term" 
+                        required
+                    >
+                </li>
+                <li>
+                    <label for="definition">Definition: </label>
+                    <textarea 
+                        name="definition" 
+                        cols="30" rows="10" 
+                        placeholder="Enter definition" 
+                        ng-model="addterm.data.definition" 
+                        required
+                    ></textarea>
+                </li>
+                <li>
+                    <button 
+                        type="submit" 
+                        ng-click="update(addterm.data)" 
+                        ng-disabled="addtermForm.$invalid"
+                    >Submit</button>
+                </li>
+            </ul>
         </form>
     </div>
 </div>
