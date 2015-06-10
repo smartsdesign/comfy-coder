@@ -1,4 +1,4 @@
-# comfy-coder
+## definitions wiki
 
 This is a simple web development technical terms wiki application built using the **MEAN** development stack. The server is built on *Node* courtesy of *ExpressJS*, data is stored in *MongoDB* courtesy of [mongolab](https://mongolab.com), and *AngularJS* on the front-end.
 
