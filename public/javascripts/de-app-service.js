@@ -10,7 +10,7 @@
                 .then(function(response){
                     return response.data;
                 });
-        }
+        };
 
         //get single item
         var getSingleItem = function(){
@@ -19,14 +19,14 @@
                 .then(function(response){
                     return response.data;
                 });
-        }
+        };
 
         //return data obj
         return {
-            "getData": getData,
-            "getSingleItem": getSingleItem
-        }
-    }
+            'getData': getData,
+            'getSingleItem': getSingleItem
+        };
+    };
 
     //setup service
     angular
