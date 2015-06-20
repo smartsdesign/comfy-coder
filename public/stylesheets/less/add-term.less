@@ -1,20 +1,26 @@
 .add-term {
-    li {
-        .form-group();
-        overflow: hidden;
+    .wrapper & ul {
 
-        input,
-        textarea {
-            box-sizing: border-box;
-            .form-control();
-            height: auto;
-            width: 100%;
+        li {
+            .form-group();
+            overflow: hidden;
+            background: none;
+            border: none;
+
+            input,
+            textarea {
+                box-sizing: border-box;
+                .form-control();
+                height: auto;
+                width: 100%;
+            }
+
+            button {
+                .btn();
+                .btn-default();
+                .pull-right();
+            }
         }
 
-        button {
-            .btn();
-            .btn-default();
-            .pull-right();
-        }
     }
 }

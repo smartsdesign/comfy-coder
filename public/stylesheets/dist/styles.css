@@ -473,15 +473,17 @@ body .wrapper ul li a:active {
 .definitions-wrapper .sub-section a:active {
   opacity: 0.5;
 }
-.add-term li {
+.wrapper .add-term ul li {
   margin-bottom: 15px;
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
   overflow: hidden;
+  background: none;
+  border: none;
 }
-.add-term li input,
-.add-term li textarea {
+.wrapper .add-term ul li input,
+.wrapper .add-term ul li textarea {
   box-sizing: border-box;
   display: block;
   height: 34px;
@@ -504,46 +506,46 @@ body .wrapper ul li a:active {
   height: auto;
   width: 100%;
 }
-.add-term li input:focus,
-.add-term li textarea:focus {
+.wrapper .add-term ul li input:focus,
+.wrapper .add-term ul li textarea:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.add-term li input::-moz-placeholder,
-.add-term li textarea::-moz-placeholder {
+.wrapper .add-term ul li input::-moz-placeholder,
+.wrapper .add-term ul li textarea::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-.add-term li input:-ms-input-placeholder,
-.add-term li textarea:-ms-input-placeholder {
+.wrapper .add-term ul li input:-ms-input-placeholder,
+.wrapper .add-term ul li textarea:-ms-input-placeholder {
   color: #999999;
 }
-.add-term li input::-webkit-input-placeholder,
-.add-term li textarea::-webkit-input-placeholder {
+.wrapper .add-term ul li input::-webkit-input-placeholder,
+.wrapper .add-term ul li textarea::-webkit-input-placeholder {
   color: #999999;
 }
-.add-term li input[disabled],
-.add-term li textarea[disabled],
-.add-term li input[readonly],
-.add-term li textarea[readonly],
-fieldset[disabled] .add-term li input,
-fieldset[disabled] .add-term li textarea {
+.wrapper .add-term ul li input[disabled],
+.wrapper .add-term ul li textarea[disabled],
+.wrapper .add-term ul li input[readonly],
+.wrapper .add-term ul li textarea[readonly],
+fieldset[disabled] .wrapper .add-term ul li input,
+fieldset[disabled] .wrapper .add-term ul li textarea {
   background-color: #eeeeee;
   opacity: 1;
 }
-.add-term li input[disabled],
-.add-term li textarea[disabled],
-fieldset[disabled] .add-term li input,
-fieldset[disabled] .add-term li textarea {
+.wrapper .add-term ul li input[disabled],
+.wrapper .add-term ul li textarea[disabled],
+fieldset[disabled] .wrapper .add-term ul li input,
+fieldset[disabled] .wrapper .add-term ul li textarea {
   cursor: not-allowed;
 }
-textarea.add-term li input,
-textarea.add-term li textarea {
+textarea.wrapper .add-term ul li input,
+textarea.wrapper .add-term ul li textarea {
   height: auto;
 }
-.add-term li button {
+.wrapper .add-term ul li button {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -567,32 +569,32 @@ textarea.add-term li textarea {
   border-color: #cccccc;
   float: right !important;
 }
-.add-term li button:focus,
-.add-term li button:active:focus,
-.add-term li button.active:focus,
-.add-term li button.focus,
-.add-term li button:active.focus,
-.add-term li button.active.focus {
+.wrapper .add-term ul li button:focus,
+.wrapper .add-term ul li button:active:focus,
+.wrapper .add-term ul li button.active:focus,
+.wrapper .add-term ul li button.focus,
+.wrapper .add-term ul li button:active.focus,
+.wrapper .add-term ul li button.active.focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.add-term li button:hover,
-.add-term li button:focus,
-.add-term li button.focus {
+.wrapper .add-term ul li button:hover,
+.wrapper .add-term ul li button:focus,
+.wrapper .add-term ul li button.focus {
   color: #333333;
   text-decoration: none;
 }
-.add-term li button:active,
-.add-term li button.active {
+.wrapper .add-term ul li button:active,
+.wrapper .add-term ul li button.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.add-term li button.disabled,
-.add-term li button[disabled],
-fieldset[disabled] .add-term li button {
+.wrapper .add-term ul li button.disabled,
+.wrapper .add-term ul li button[disabled],
+fieldset[disabled] .wrapper .add-term ul li button {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -600,43 +602,43 @@ fieldset[disabled] .add-term li button {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.add-term li button:hover,
-.add-term li button:focus,
-.add-term li button.focus,
-.add-term li button:active,
-.add-term li button.active,
-.open > .dropdown-toggle.add-term li button {
+.wrapper .add-term ul li button:hover,
+.wrapper .add-term ul li button:focus,
+.wrapper .add-term ul li button.focus,
+.wrapper .add-term ul li button:active,
+.wrapper .add-term ul li button.active,
+.open > .dropdown-toggle.wrapper .add-term ul li button {
   color: #333333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
-.add-term li button:active,
-.add-term li button.active,
-.open > .dropdown-toggle.add-term li button {
+.wrapper .add-term ul li button:active,
+.wrapper .add-term ul li button.active,
+.open > .dropdown-toggle.wrapper .add-term ul li button {
   background-image: none;
 }
-.add-term li button.disabled,
-.add-term li button[disabled],
-fieldset[disabled] .add-term li button,
-.add-term li button.disabled:hover,
-.add-term li button[disabled]:hover,
-fieldset[disabled] .add-term li button:hover,
-.add-term li button.disabled:focus,
-.add-term li button[disabled]:focus,
-fieldset[disabled] .add-term li button:focus,
-.add-term li button.disabled.focus,
-.add-term li button[disabled].focus,
-fieldset[disabled] .add-term li button.focus,
-.add-term li button.disabled:active,
-.add-term li button[disabled]:active,
-fieldset[disabled] .add-term li button:active,
-.add-term li button.disabled.active,
-.add-term li button[disabled].active,
-fieldset[disabled] .add-term li button.active {
+.wrapper .add-term ul li button.disabled,
+.wrapper .add-term ul li button[disabled],
+fieldset[disabled] .wrapper .add-term ul li button,
+.wrapper .add-term ul li button.disabled:hover,
+.wrapper .add-term ul li button[disabled]:hover,
+fieldset[disabled] .wrapper .add-term ul li button:hover,
+.wrapper .add-term ul li button.disabled:focus,
+.wrapper .add-term ul li button[disabled]:focus,
+fieldset[disabled] .wrapper .add-term ul li button:focus,
+.wrapper .add-term ul li button.disabled.focus,
+.wrapper .add-term ul li button[disabled].focus,
+fieldset[disabled] .wrapper .add-term ul li button.focus,
+.wrapper .add-term ul li button.disabled:active,
+.wrapper .add-term ul li button[disabled]:active,
+fieldset[disabled] .wrapper .add-term ul li button:active,
+.wrapper .add-term ul li button.disabled.active,
+.wrapper .add-term ul li button[disabled].active,
+fieldset[disabled] .wrapper .add-term ul li button.active {
   background-color: #ffffff;
   border-color: #cccccc;
 }
-.add-term li button .badge {
+.wrapper .add-term ul li button .badge {
   color: #ffffff;
   background-color: #333333;
 }
