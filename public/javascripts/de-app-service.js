@@ -2,6 +2,7 @@
     'use strict';
 
     var glossaryService = function($http, $routeParams){
+
         
         //get data
         var getData = function(){
@@ -15,7 +16,7 @@
         //get single item
         var getSingleItem = function(){
             return $http 
-                .get('/glossary/definition/' + $routeParams.itemId)
+                .get('/glossary/definition/' + $routeParams.term)
                 .then(function(response){
                     return response.data;
                 });

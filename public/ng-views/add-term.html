@@ -1,9 +1,11 @@
 <div class="add-term">
     <div class="sub-section">
+        <a href="/"><span class="back-link"></span>go to wiki</a>
         <h4>Add term</h4>
         <pre>{{addterm.data}}</pre>
         <form   
             name="addtermForm"
+            ng-submit="addterm.processFrm()"
             novalidate
         >
             <ul>
@@ -29,8 +31,7 @@
                 </li>
                 <li>
                     <button 
-                        type="submit" 
-                        ng-click="update(addterm.data)" 
+                        type="submit"  
                         ng-disabled="addtermForm.$invalid"
                     >Submit</button>
                 </li>

@@ -10,10 +10,10 @@ glossaryRouter.get('/list', function (req, res, next){
 });
 
 //get single defintion
-glossaryRouter.get('/definition/:itemId', function (req, res, next){
+glossaryRouter.get('/definition/:term', function (req, res, next){
     var db = res.db;
     db.collection('definitions').find({ 
-        "definitions.itemId" : req.params.itemId }, {
+        "definitions.term" : req.params.term }, {
             "definitions.$": 1
     }).toArray(function (err, result){
         res.json(result);

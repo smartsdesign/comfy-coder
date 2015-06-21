@@ -8,14 +8,26 @@
         ])
         .controller('addTermController', [
             '$log',
-            'glossaryService', 
+            '$window',
+            '$http', 
             addTermController
         ]);
 
-        function addTermController($log, glossaryService){
+        function addTermController($log, $window, $http){
             var vm = this;
             
             vm.data = {};
+
+            vm.processFrm = function(){
+                //post data to mongodb
+                $http
+                    .post('newdefinition/addterm', vm.data)
+                    .success(function(response){
+                        $log.log(response);
+                        $window.alert(vm.data.term + ' - was added successfully!');
+                        vm.data = {};
+                    });
+            };
         }
 
 }());

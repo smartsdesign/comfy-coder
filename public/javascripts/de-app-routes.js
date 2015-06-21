@@ -19,7 +19,7 @@
                 "controller": "glosMainController",
                 "controllerAs": "main"
             })
-            .when('/definition/:itemId', {
+            .when('/definition/:term', {
                 "templateUrl": "ng-views/definitions.html",
                 "controller": "definitionsController",
                 "controllerAs": "defs"

@@ -23,7 +23,7 @@
             onError = function(err){
                 vm.err = err;
                 $log.log(vm.err);
-            }
+            };
 
         //fetch data
         glossaryService.getData().then(onSuccess, onError);

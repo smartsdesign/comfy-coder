@@ -139,6 +139,37 @@ body .wrapper ul:after,
 .has-feedback .form-control-feedback {
   top: 0;
 }
+/* -------------
+| custom 
+----------------*/
+.link-type-back:link,
+.link-type-back:visited {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 0;
+  background-color: transparent;
+}
+.link-type-back:link .back-link,
+.link-type-back:visited .back-link {
+  padding-right: 5px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.link-type-back:link .back-link:before,
+.link-type-back:visited .back-link:before {
+  content: "\e132";
+}
+.link-type-back:hover,
+.link-type-back:active {
+  opacity: 0.5;
+}
 body {
   font: 14px consolas, sans-serif;
   background: #eeeeee;
@@ -471,6 +502,34 @@ body .wrapper ul li a:active {
 }
 .definitions-wrapper .sub-section a:hover,
 .definitions-wrapper .sub-section a:active {
+  opacity: 0.5;
+}
+.add-term a:link,
+.add-term a:visited {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 0;
+  background-color: transparent;
+}
+.add-term a:link .back-link,
+.add-term a:visited .back-link {
+  padding-right: 5px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.add-term a:link .back-link:before,
+.add-term a:visited .back-link:before {
+  content: "\e132";
+}
+.add-term a:hover,
+.add-term a:active {
   opacity: 0.5;
 }
 .wrapper .add-term ul li {
