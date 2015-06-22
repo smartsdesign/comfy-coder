@@ -41,16 +41,22 @@ body {
             form {
                 box-sizing: border-box;
                 .clearfix();
-                .make-md-column(10);
-                .make-md-column-offset(1);
+                .make-xs-column(10);
+                .make-xs-column-offset(1);
                 .make-sm-column(10);
                 .make-sm-column-offset(1);
+                .make-md-column(10);
+                .make-md-column-offset(1);
                 padding-left: 0;
                 padding-right: 0;
 
                 input {
                     box-sizing: border-box;
                     .form-control();
+                    .make-sm-column(10);
+                    .make-sm-column-offset(1);
+                    .make-md-column(8);
+                    .make-md-column-offset(2);
                     box-shadow: 0 0 0;
                     border: none;
                     border-radius: 0;
@@ -66,10 +72,12 @@ body {
             li {
                 box-sizing: border-box;
                 .list-group-item();
-                .make-md-column(8);
-                .make-md-column-offset(2);
+                .make-xs-column(10);
+                .make-xs-column-offset(1);
                 .make-sm-column(10);
                 .make-sm-column-offset(1);
+                .make-md-column(8);
+                .make-md-column-offset(2);
                 margin-bottom: 5px;
                 
                 a {

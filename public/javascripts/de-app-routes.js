@@ -1,33 +1,38 @@
 (function(){
-    'use strict';
+    "use strict";
 
     angular
-        .module('modGlosRoutes', [
-            'glosApp',
-            'ngRoute'
+        .module("modGlosRoutes", [
+            "glosApp",
+            "ngRoute"
         ])
         .config([
-            '$routeProvider',
-            '$locationProvider',
+            "$routeProvider",
+            "$locationProvider",
             route
         ]);
 
     function route($routeProvider, $locationProvider){
         $routeProvider
-            .when('/', {
+            .when("/", {
                 "templateUrl": "ng-views/index.html",
                 "controller": "glosMainController",
                 "controllerAs": "main"
             })
-            .when('/definition/:term', {
+            .when("/definition/:term", {
                 "templateUrl": "ng-views/definitions.html",
                 "controller": "definitionsController",
                 "controllerAs": "defs"
             })
-            .when('/add-term', {
+            .when("/add-term", {
                 "templateUrl": "ng-views/add-term.html",
                 "controller": "addTermController",
                 "controllerAs": "addterm"
+            })
+            .when("/amend", {
+                "templateUrl": "ng-views/amend.html",
+                "controller": "deleteTermController",
+                "controllerAs": "deleteterm"
             })
             .otherwise({
                 "redirectTo": "/"

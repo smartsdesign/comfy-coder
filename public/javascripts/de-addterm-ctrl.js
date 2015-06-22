@@ -3,8 +3,7 @@
 
     angular
         .module('modAddTermCtrl', [
-            'glosApp',
-            'modGlosService'
+            'glosApp'
         ])
         .controller('addTermController', [
             '$log',

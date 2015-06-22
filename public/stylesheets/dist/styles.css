@@ -248,6 +248,9 @@ body .wrapper .filter {
 }
 body .wrapper .filter form {
   box-sizing: border-box;
+  float: left;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -271,24 +274,24 @@ body .wrapper .filter form:after {
 body .wrapper .filter form:after {
   clear: both;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   body .wrapper .filter form {
     float: left;
     width: 83.33333333%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   body .wrapper .filter form {
     margin-left: 8.33333333%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   body .wrapper .filter form {
     float: left;
     width: 83.33333333%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   body .wrapper .filter form {
     margin-left: 8.33333333%;
   }
@@ -313,6 +316,10 @@ body .wrapper .filter form input {
   display: inline-block;
   width: auto;
   vertical-align: middle;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-shadow: 0 0 0;
   border: none;
   border-radius: 0;
@@ -347,6 +354,28 @@ fieldset[disabled] body .wrapper .filter form input {
 textareabody .wrapper .filter form input {
   height: auto;
 }
+@media (min-width: 768px) {
+  body .wrapper .filter form input {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  body .wrapper .filter form input {
+    margin-left: 8.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  body .wrapper .filter form input {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  body .wrapper .filter form input {
+    margin-left: 16.66666667%;
+  }
+}
 body .wrapper ul {
   margin-bottom: 20px;
   padding-left: 0;
@@ -360,6 +389,9 @@ body .wrapper ul li {
   margin-bottom: -1px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
+  float: left;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -416,17 +448,6 @@ body .wrapper ul li.active:hover .list-group-item-text,
 body .wrapper ul li.active:focus .list-group-item-text {
   color: #c7ddef;
 }
-@media (min-width: 992px) {
-  body .wrapper ul li {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-@media (min-width: 992px) {
-  body .wrapper ul li {
-    margin-left: 16.66666667%;
-  }
-}
 @media (min-width: 768px) {
   body .wrapper ul li {
     float: left;
@@ -436,6 +457,17 @@ body .wrapper ul li.active:focus .list-group-item-text {
 @media (min-width: 768px) {
   body .wrapper ul li {
     margin-left: 8.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  body .wrapper ul li {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  body .wrapper ul li {
+    margin-left: 16.66666667%;
   }
 }
 body .wrapper ul li a {
@@ -700,4 +732,42 @@ fieldset[disabled] .wrapper .add-term ul li button.active {
 .wrapper .add-term ul li button .badge {
   color: #ffffff;
   background-color: #333333;
+}
+.amend-wrapper ul li .term {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .amend-wrapper ul li .term {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .amend-wrapper ul li .term {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+.amend-wrapper ul li .utils {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .amend-wrapper ul li .utils {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .amend-wrapper ul li .utils {
+    float: left;
+    width: 16.66666667%;
+  }
 }

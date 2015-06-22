@@ -6,7 +6,8 @@
             'modGlosRoutes',
             'modGlosMainCtrl',
             'modGlosDefsCtrl',
-            'modAddTermCtrl'
+            'modAddTermCtrl',
+            'modDeleteTermCtrl'
         ]);
 
 }());
