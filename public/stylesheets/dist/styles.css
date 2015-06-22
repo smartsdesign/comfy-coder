@@ -491,6 +491,9 @@ body .wrapper ul li a:active {
 }
 .definitions-wrapper .sub-section {
   box-sizing: border-box;
+  float: left;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;

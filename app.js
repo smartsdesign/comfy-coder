@@ -13,6 +13,7 @@ var db = mongo.db('mongodb://smuhangi:JavaScript1@ds037581.mongolab.com:37581/di
 var routes = require('./routes/index');
 var glossary = require('./routes/glossary');
 var newdefintion = require('./routes/add-term');
+var deletedefinition = require('./routes/delete-term');
 var users = require('./routes/users');
 
 var app = express();
@@ -38,6 +39,7 @@ app.use(function (res, req, next){
 app.use('/', routes);
 app.use('/glossary', glossary);
 app.use('/newdefinition', newdefintion);
+app.use('/deletedefinition', deletedefinition);
 app.use('/users', users);
 
 //middleware: point to index page for all points of entry. - Fixes 404 errors om refresh
