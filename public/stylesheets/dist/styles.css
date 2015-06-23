@@ -561,15 +561,46 @@ body .wrapper ul li a:active {
 .definitions-wrapper .sub-section a:active {
   opacity: 0.5;
 }
-.add-term a:link,
-.add-term a:visited {
+.add-term .top {
+  float: left;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .add-term .top {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .add-term .top {
+    margin-left: 8.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .add-term .top {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .add-term .top {
+    margin-left: 16.66666667%;
+  }
+}
+.add-term .top a:link,
+.add-term .top a:visited {
   text-decoration: none;
   color: #000;
   padding: 5px 0;
   background-color: transparent;
 }
-.add-term a:link .back-link,
-.add-term a:visited .back-link {
+.add-term .top a:link .back-link,
+.add-term .top a:visited .back-link {
   padding-right: 5px;
   position: relative;
   top: 1px;
@@ -581,12 +612,12 @@ body .wrapper ul li a:active {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.add-term a:link .back-link:before,
-.add-term a:visited .back-link:before {
+.add-term .top a:link .back-link:before,
+.add-term .top a:visited .back-link:before {
   content: "\e132";
 }
-.add-term a:hover,
-.add-term a:active {
+.add-term .top a:hover,
+.add-term .top a:active {
   opacity: 0.5;
 }
 .wrapper .add-term ul li {
