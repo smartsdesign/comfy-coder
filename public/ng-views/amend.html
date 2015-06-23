@@ -7,10 +7,10 @@
     <ul class="definition-list">
         <li ng-repeat="item in deleteterm.glossaryList | filter:glossaryList">
             <span class="term">
-                <a href="definition/{{item.term}}">{{item.term}}</a>
+                {{item.term}}
             </span>
             <span class="utils">
-                <a href="definition/delete/{{item.term}}">delete</a>
+                <a href="definition/delete/{{item.term}}"><span class="delete-icon"></span>delete</a>
             </span>
         </li>
     </ul>

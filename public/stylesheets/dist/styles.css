@@ -52,8 +52,6 @@
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
-body .banner:before,
-body .banner:after,
 body .wrapper .filter:before,
 body .wrapper .filter:after,
 body .wrapper ul:before,
@@ -77,7 +75,6 @@ body .wrapper ul:after,
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-body .banner:after,
 body .wrapper .filter:after,
 body .wrapper ul:after,
 .definitions-wrapper:after {
@@ -170,15 +167,39 @@ body .wrapper ul:after,
 .link-type-back:active {
   opacity: 0.5;
 }
+.link-type-delete:link,
+.link-type-delete:visited {
+  text-decoration: none;
+}
+.link-type-delete:hover,
+.link-type-delete:active {
+  opacity: 0.5;
+}
+.link-type-delete .delete-icon {
+  padding-right: 5px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top: 2px;
+}
+.link-type-delete .delete-icon:before {
+  content: "\e014";
+}
 body {
   font: 14px consolas, sans-serif;
   background: #eeeeee;
+  margin: 0;
+  overflow-x: hidden;
 }
 body .banner {
   background: #0e629e;
   height: 80px;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 body .banner img {
   max-height: 60px;
@@ -188,6 +209,7 @@ body .wrapper {
   box-sizing: border-box;
   max-width: 760px;
   margin: auto;
+  overflow-x: hidden;
 }
 body .wrapper header {
   padding: 30px 15px;
@@ -752,7 +774,7 @@ fieldset[disabled] .wrapper .add-term ul li button.active {
 @media (min-width: 992px) {
   .amend-wrapper ul li .term {
     float: left;
-    width: 83.33333333%;
+    width: 75%;
   }
 }
 .amend-wrapper ul li .utils {
@@ -771,6 +793,40 @@ fieldset[disabled] .wrapper .add-term ul li button.active {
 @media (min-width: 992px) {
   .amend-wrapper ul li .utils {
     float: left;
-    width: 16.66666667%;
+    width: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .amend-wrapper ul li .utils {
+    display: block;
+  }
+}
+.amend-wrapper ul li .utils a:link,
+.amend-wrapper ul li .utils a:visited {
+  text-decoration: none;
+}
+.amend-wrapper ul li .utils a:hover,
+.amend-wrapper ul li .utils a:active {
+  opacity: 0.5;
+}
+.amend-wrapper ul li .utils a .delete-icon {
+  padding-right: 5px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top: 2px;
+}
+.amend-wrapper ul li .utils a .delete-icon:before {
+  content: "\e014";
+}
+@media (max-width: 767px) {
+  .amend-wrapper ul li .utils a {
+    padding: 10px 0;
   }
 }

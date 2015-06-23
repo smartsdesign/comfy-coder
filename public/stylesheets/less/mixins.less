@@ -91,3 +91,31 @@
     }
 
 }
+
+.image-replacement (@url, @width, @height) {
+  display: block;
+  width: @width;
+  height: @height;
+  background: url(@url) no-repeat left top;
+  .text-hide();
+}
+
+.link-type-delete{
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+  
+  .delete-icon {
+    padding-right: 5px;
+    .glyphicon();
+    .glyphicon-remove();
+    top: 2px;
+  }
+
+}
