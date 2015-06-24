@@ -191,6 +191,22 @@ body .wrapper ul:after,
 .link-type-delete .delete-icon:before {
   content: "\e014";
 }
+.icon-search {
+  padding-right: 5px;
+  font-size: 21px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-search:before {
+  content: "\e003";
+}
 body {
   font: 14px consolas, sans-serif;
   background: #eeeeee;
@@ -270,13 +286,13 @@ body .wrapper .filter {
 }
 body .wrapper .filter form {
   box-sizing: border-box;
+  position: relative;
   float: left;
   width: 83.33333333%;
-  margin-left: 8.33333333%;
-  position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: 8.33333333%;
   padding-left: 0;
   padding-right: 0;
 }
@@ -296,31 +312,39 @@ body .wrapper .filter form:after {
 body .wrapper .filter form:after {
   clear: both;
 }
-@media (min-width: 768px) {
-  body .wrapper .filter form {
-    float: left;
-    width: 83.33333333%;
-  }
+body .wrapper .filter form .search-icon {
+  box-sizing: border-box;
+  float: left;
+  width: 16.66666667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-right: 5px;
+  font-size: 21px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top: 6px;
 }
 @media (min-width: 768px) {
-  body .wrapper .filter form {
-    margin-left: 8.33333333%;
-  }
-}
-@media (min-width: 992px) {
-  body .wrapper .filter form {
+  body .wrapper .filter form .search-icon {
     float: left;
-    width: 83.33333333%;
+    width: 8.33333333%;
   }
 }
-@media (min-width: 992px) {
-  body .wrapper .filter form {
-    margin-left: 8.33333333%;
-  }
+body .wrapper .filter form .search-icon:before {
+  content: "\e003";
 }
 body .wrapper .filter form input {
   box-sizing: border-box;
   display: block;
+  width: 100%;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -338,14 +362,16 @@ body .wrapper .filter form input {
   display: inline-block;
   width: auto;
   vertical-align: middle;
+  float: left;
+  width: 83.33333333%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  float: right !important;
   box-shadow: 0 0 0;
   border: none;
   border-radius: 0;
-  width: 100%;
 }
 body .wrapper .filter form input:focus {
   border-color: #66afe9;
@@ -379,23 +405,7 @@ textareabody .wrapper .filter form input {
 @media (min-width: 768px) {
   body .wrapper .filter form input {
     float: left;
-    width: 83.33333333%;
-  }
-}
-@media (min-width: 768px) {
-  body .wrapper .filter form input {
-    margin-left: 8.33333333%;
-  }
-}
-@media (min-width: 992px) {
-  body .wrapper .filter form input {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-@media (min-width: 992px) {
-  body .wrapper .filter form input {
-    margin-left: 16.66666667%;
+    width: 91.66666667%;
   }
 }
 body .wrapper ul {
@@ -411,13 +421,13 @@ body .wrapper ul li {
   margin-bottom: -1px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
+  position: relative;
   float: left;
   width: 83.33333333%;
-  margin-left: 8.33333333%;
-  position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: 8.33333333%;
   margin-bottom: 5px;
 }
 body .wrapper ul li:first-child {
@@ -469,28 +479,6 @@ body .wrapper ul li.active .list-group-item-text,
 body .wrapper ul li.active:hover .list-group-item-text,
 body .wrapper ul li.active:focus .list-group-item-text {
   color: #c7ddef;
-}
-@media (min-width: 768px) {
-  body .wrapper ul li {
-    float: left;
-    width: 83.33333333%;
-  }
-}
-@media (min-width: 768px) {
-  body .wrapper ul li {
-    margin-left: 8.33333333%;
-  }
-}
-@media (min-width: 992px) {
-  body .wrapper ul li {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-@media (min-width: 992px) {
-  body .wrapper ul li {
-    margin-left: 16.66666667%;
-  }
 }
 body .wrapper ul li a {
   display: block;
