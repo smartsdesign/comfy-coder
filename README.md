@@ -1,6 +1,6 @@
 ## Wiki app
 
-This is a simple web development technical terms wiki application built using the **MEAN** development stack. The server is built on *Node* courtesy of *ExpressJS*, data is stored in *MongoDB* courtesy of [mongolab](https://mongolab.com), and *AngularJS* on the front-end.
+A simple CRUD application built using the **MEAN** development stack. The server is built on *Node* courtesy of *ExpressJS*, data is stored in *MongoDB* courtesy of [mongolab](https://mongolab.com), and *AngularJS* on the front-end.
 
 To run the application locally, 
 * install [nodejs](https://nodejs.org/download/) and [git](https://git-scm.com/downloads), if not already installed on your machine,
