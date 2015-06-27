@@ -52,12 +52,16 @@
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
+.layout-basic:before,
+.layout-basic:after,
 body .wrapper .filter:before,
 body .wrapper .filter:after,
 body .wrapper ul:before,
 body .wrapper ul:after,
 .definitions-wrapper:before,
-.definitions-wrapper:after {
+.definitions-wrapper:after,
+.is-deleted:before,
+.is-deleted:after {
   content: " ";
   display: table;
 }
@@ -75,9 +79,11 @@ body .wrapper ul:after,
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
+.layout-basic:after,
 body .wrapper .filter:after,
 body .wrapper ul:after,
-.definitions-wrapper:after {
+.definitions-wrapper:after,
+.is-deleted:after {
   clear: both;
 }
 @font-face {
@@ -165,6 +171,63 @@ body .wrapper ul:after,
 }
 .link-type-back:hover,
 .link-type-back:active {
+  opacity: 0.5;
+}
+.layout-basic {
+  box-sizing: border-box;
+  margin-left: -15px;
+  margin-right: -15px;
+  max-width: 760px;
+  margin: auto;
+}
+.layout-basic .sub-section {
+  box-sizing: border-box;
+  float: left;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  .layout-basic .sub-section {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .layout-basic .sub-section {
+    margin-left: 8.33333333%;
+  }
+}
+.layout-basic .sub-section a:link,
+.layout-basic .sub-section a:visited {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 0;
+  background-color: transparent;
+}
+.layout-basic .sub-section a:link .back-link,
+.layout-basic .sub-section a:visited .back-link {
+  padding-right: 5px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.layout-basic .sub-section a:link .back-link:before,
+.layout-basic .sub-section a:visited .back-link:before {
+  content: "\e132";
+}
+.layout-basic .sub-section a:hover,
+.layout-basic .sub-section a:active {
   opacity: 0.5;
 }
 .link-type-delete:link,
@@ -848,4 +911,61 @@ fieldset[disabled] .wrapper .add-term ul li button.active {
   .amend-wrapper ul li .utils a {
     padding: 10px 0;
   }
+}
+.is-deleted {
+  box-sizing: border-box;
+  margin-left: -15px;
+  margin-right: -15px;
+  max-width: 760px;
+  margin: auto;
+}
+.is-deleted .sub-section {
+  box-sizing: border-box;
+  float: left;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  .is-deleted .sub-section {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .is-deleted .sub-section {
+    margin-left: 8.33333333%;
+  }
+}
+.is-deleted .sub-section a:link,
+.is-deleted .sub-section a:visited {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 0;
+  background-color: transparent;
+}
+.is-deleted .sub-section a:link .back-link,
+.is-deleted .sub-section a:visited .back-link {
+  padding-right: 5px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.is-deleted .sub-section a:link .back-link:before,
+.is-deleted .sub-section a:visited .back-link:before {
+  content: "\e132";
+}
+.is-deleted .sub-section a:hover,
+.is-deleted .sub-section a:active {
+  opacity: 0.5;
 }

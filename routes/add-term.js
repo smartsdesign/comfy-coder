@@ -8,14 +8,13 @@ addTermRouter.post('/addterm', function (req, res){
     db
     	.collection('definitions')
     	.update({
-    		_id: mongo.helper.toObjectID('5555c9afe4b02f885ca9a5c5')
-    	}, 
-    	{ 
+    		_id: mongo.helper.toObjectID('558ea8dde4b0cfb129e131bb')
+    	},{ 
     		'$push': {
     			definitions: req.body
     		}
     	}, function(err, result){
-    		res.send((err === null) ? {'msg': req.body.term + ' - has been added!'} : {'msg': 'error' + error});
+    		res.send((err === null) ? {'msg': req.body.term + ' has been added successfully!'} : {'msg': 'error' + error});
     	});
 });
 

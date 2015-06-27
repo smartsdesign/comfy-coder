@@ -7,7 +7,8 @@
             'modGlosMainCtrl',
             'modGlosDefsCtrl',
             'modAddTermCtrl',
-            'modDeleteTermCtrl'
+            'modDeleteTermCtrl',
+            'modDeletedCtrl'
         ]);
 
 }());

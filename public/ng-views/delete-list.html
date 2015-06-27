@@ -1,0 +1,18 @@
+<div class="amend-wrapper">
+    <div class="filter">
+        <form>
+            <span class="search-icon"></span>
+            <input type="text" name="filter" placeholder="Filter" ng-model="glossaryList.term">
+        </form>
+    </div>
+    <ul class="definition-list">
+        <li ng-repeat="item in deleteterm.glossaryList | filter:glossaryList">
+            <span class="term">
+                {{item.term}}
+            </span>
+            <span class="utils">
+                <a href="#" ng-click="deleteterm.deleteItem(item.term)"><span class="delete-icon"></span>delete</a>
+            </span>
+        </li>
+    </ul>
+</div>

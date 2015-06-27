@@ -29,10 +29,15 @@
                 "controller": "addTermController",
                 "controllerAs": "addterm"
             })
-            .when("/amend", {
-                "templateUrl": "ng-views/amend.html",
+            .when("/delete", {
+                "templateUrl": "ng-views/delete-list.html",
                 "controller": "deleteTermController",
                 "controllerAs": "deleteterm"
+            })
+            .when("/deleteterm/:term", {
+                "templateUrl": "ng-views/item-deleted.html",
+                "controller": "deletedTermController",
+                "controllerAs": "isdeleted"
             })
             .otherwise({
                 "redirectTo": "/"

@@ -92,6 +92,29 @@
 
 }
 
+.layout-basic {
+    box-sizing: border-box;
+    .make-row();
+    max-width: 760px;
+    margin: auto;
+    
+    .sub-section {
+        box-sizing: border-box;
+        .make-xs-column(10);
+        .make-xs-column-offset(1);
+        .make-md-column(10);
+        .make-md-column-offset(1);
+        padding-left: 0;
+
+        h2 {  
+        }
+
+        a {
+            .link-type-back();
+        }
+    }
+}
+
 .image-replacement (@url, @width, @height) {
   display: block;
   width: @width;

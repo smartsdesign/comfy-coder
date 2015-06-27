@@ -24,7 +24,13 @@
 					$log.log(err);
 				};
 
-			//fetch data
+			vm.deleteItem = function(item){
+				if(confirm('Are you sure you want to expunge ' + item)){ /*TODO - move confirm to a directive as is a UI element*/
+					$window.location.href = "/deleteterm/" + item;
+				}
+			};
+
+			//fetch list
 			glossaryService.getData().then(onSuccess, onErr);
 
 		}

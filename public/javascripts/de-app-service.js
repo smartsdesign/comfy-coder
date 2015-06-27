@@ -22,10 +22,20 @@
                 });
         };
 
+        //delete single item
+        var deleteSingleItem = function(){
+            return $http
+                .delete('/deletedefinition/deleteterm/' + $routeParams.term)
+                .then(function(response){
+                    return response.data;
+                });
+        };
+
         //return data obj
         return {
             'getData': getData,
-            'getSingleItem': getSingleItem
+            'getSingleItem': getSingleItem,
+            'deleteSingleItem': deleteSingleItem
         };
     };
 
