@@ -15,7 +15,7 @@
 
     function definitionsController($log, glossaryService){
 
-        var vm = this;
+        var vm = this; //jshint ignore: line
 
         var onSuccess = function(data){
                 vm.wordDefinition = data[0].definitions[0];

@@ -13,8 +13,8 @@
         ]);
 
         function addTermController($log, $window, $http){
-            var vm = this;
             
+            var vm = this; //jshint ignore: line
             vm.data = {};
 
             vm.processFrm = function(){

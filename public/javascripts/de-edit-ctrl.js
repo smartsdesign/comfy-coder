@@ -2,18 +2,18 @@
     "use strict";
 
     angular
-        .module('modEditCtrl', [
+        .module("modEditCtrl", [
             "glosApp",
             "modGlosService"
         ])
-        .controller('editController', [
+        .controller("editController", [
             "$log",
             "glossaryService",
             editController
         ]);
 
     function editController($log, glossaryService){
-        var vm = this,
+        var vm = this, //jshint ignore: line
             onSuccess = function(data){
                 vm.glossaryList = data[0].definitions;
             },

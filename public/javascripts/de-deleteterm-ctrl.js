@@ -14,7 +14,7 @@
 		]);
 
 		function deleteTermController(glossaryService, $log, $window){
-			var vm = this,
+			var vm = this, //jshint ignore: line
 				onSuccess = function(data){
 					vm.glossaryList = data[0].definitions;
 				},
