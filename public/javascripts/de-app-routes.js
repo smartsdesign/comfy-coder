@@ -44,6 +44,11 @@
                 "controller": "editController",
                 "controllerAs": "edit"
             })
+            .when("/edit-term/:term", {
+                "templateUrl": "ng-views/edit-term.html",
+                "controller": "editTermController",
+                "controllerAs": "edit"
+            })
             .otherwise({
                 "redirectTo": "/"
             });

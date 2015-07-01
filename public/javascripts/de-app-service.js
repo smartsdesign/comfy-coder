@@ -2,8 +2,7 @@
     'use strict';
 
     var glossaryService = function($http, $routeParams){
-
-        
+     
         //get data
         var getData = function(){
             return $http

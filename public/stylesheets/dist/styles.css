@@ -616,7 +616,8 @@ body .wrapper ul li a:active {
 .definitions-wrapper .sub-section a:active {
   opacity: 0.5;
 }
-.add-term .top {
+.add-term .top,
+.edit-term .top {
   float: left;
   width: 83.33333333%;
   margin-left: 8.33333333%;
@@ -626,36 +627,44 @@ body .wrapper ul li a:active {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .add-term .top {
+  .add-term .top,
+  .edit-term .top {
     float: left;
     width: 83.33333333%;
   }
 }
 @media (min-width: 768px) {
-  .add-term .top {
+  .add-term .top,
+  .edit-term .top {
     margin-left: 8.33333333%;
   }
 }
 @media (min-width: 992px) {
-  .add-term .top {
+  .add-term .top,
+  .edit-term .top {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
-  .add-term .top {
+  .add-term .top,
+  .edit-term .top {
     margin-left: 16.66666667%;
   }
 }
 .add-term .top a:link,
-.add-term .top a:visited {
+.edit-term .top a:link,
+.add-term .top a:visited,
+.edit-term .top a:visited {
   text-decoration: none;
   color: #000;
   padding: 5px 0;
   background-color: transparent;
 }
 .add-term .top a:link .back-link,
-.add-term .top a:visited .back-link {
+.edit-term .top a:link .back-link,
+.add-term .top a:visited .back-link,
+.edit-term .top a:visited .back-link {
   padding-right: 5px;
   position: relative;
   top: 1px;
@@ -668,14 +677,19 @@ body .wrapper ul li a:active {
   -moz-osx-font-smoothing: grayscale;
 }
 .add-term .top a:link .back-link:before,
-.add-term .top a:visited .back-link:before {
+.edit-term .top a:link .back-link:before,
+.add-term .top a:visited .back-link:before,
+.edit-term .top a:visited .back-link:before {
   content: "\e132";
 }
 .add-term .top a:hover,
-.add-term .top a:active {
+.edit-term .top a:hover,
+.add-term .top a:active,
+.edit-term .top a:active {
   opacity: 0.5;
 }
-.wrapper .add-term ul li {
+.wrapper .add-term ul li,
+.wrapper .edit-term ul li {
   margin-bottom: 15px;
   display: inline-block;
   margin-bottom: 0;
@@ -685,7 +699,9 @@ body .wrapper ul li a:active {
   border: none;
 }
 .wrapper .add-term ul li input,
-.wrapper .add-term ul li textarea {
+.wrapper .edit-term ul li input,
+.wrapper .add-term ul li textarea,
+.wrapper .edit-term ul li textarea {
   box-sizing: border-box;
   display: block;
   height: 34px;
@@ -709,45 +725,66 @@ body .wrapper ul li a:active {
   width: 100%;
 }
 .wrapper .add-term ul li input:focus,
-.wrapper .add-term ul li textarea:focus {
+.wrapper .edit-term ul li input:focus,
+.wrapper .add-term ul li textarea:focus,
+.wrapper .edit-term ul li textarea:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .wrapper .add-term ul li input::-moz-placeholder,
-.wrapper .add-term ul li textarea::-moz-placeholder {
+.wrapper .edit-term ul li input::-moz-placeholder,
+.wrapper .add-term ul li textarea::-moz-placeholder,
+.wrapper .edit-term ul li textarea::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
 .wrapper .add-term ul li input:-ms-input-placeholder,
-.wrapper .add-term ul li textarea:-ms-input-placeholder {
+.wrapper .edit-term ul li input:-ms-input-placeholder,
+.wrapper .add-term ul li textarea:-ms-input-placeholder,
+.wrapper .edit-term ul li textarea:-ms-input-placeholder {
   color: #999999;
 }
 .wrapper .add-term ul li input::-webkit-input-placeholder,
-.wrapper .add-term ul li textarea::-webkit-input-placeholder {
+.wrapper .edit-term ul li input::-webkit-input-placeholder,
+.wrapper .add-term ul li textarea::-webkit-input-placeholder,
+.wrapper .edit-term ul li textarea::-webkit-input-placeholder {
   color: #999999;
 }
 .wrapper .add-term ul li input[disabled],
+.wrapper .edit-term ul li input[disabled],
 .wrapper .add-term ul li textarea[disabled],
+.wrapper .edit-term ul li textarea[disabled],
 .wrapper .add-term ul li input[readonly],
+.wrapper .edit-term ul li input[readonly],
 .wrapper .add-term ul li textarea[readonly],
+.wrapper .edit-term ul li textarea[readonly],
 fieldset[disabled] .wrapper .add-term ul li input,
-fieldset[disabled] .wrapper .add-term ul li textarea {
+fieldset[disabled] .wrapper .edit-term ul li input,
+fieldset[disabled] .wrapper .add-term ul li textarea,
+fieldset[disabled] .wrapper .edit-term ul li textarea {
   background-color: #eeeeee;
   opacity: 1;
 }
 .wrapper .add-term ul li input[disabled],
+.wrapper .edit-term ul li input[disabled],
 .wrapper .add-term ul li textarea[disabled],
+.wrapper .edit-term ul li textarea[disabled],
 fieldset[disabled] .wrapper .add-term ul li input,
-fieldset[disabled] .wrapper .add-term ul li textarea {
+fieldset[disabled] .wrapper .edit-term ul li input,
+fieldset[disabled] .wrapper .add-term ul li textarea,
+fieldset[disabled] .wrapper .edit-term ul li textarea {
   cursor: not-allowed;
 }
 textarea.wrapper .add-term ul li input,
-textarea.wrapper .add-term ul li textarea {
+textarea.wrapper .edit-term ul li input,
+textarea.wrapper .add-term ul li textarea,
+textarea.wrapper .edit-term ul li textarea {
   height: auto;
 }
-.wrapper .add-term ul li button {
+.wrapper .add-term ul li button,
+.wrapper .edit-term ul li button {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -772,31 +809,45 @@ textarea.wrapper .add-term ul li textarea {
   float: right !important;
 }
 .wrapper .add-term ul li button:focus,
+.wrapper .edit-term ul li button:focus,
 .wrapper .add-term ul li button:active:focus,
+.wrapper .edit-term ul li button:active:focus,
 .wrapper .add-term ul li button.active:focus,
+.wrapper .edit-term ul li button.active:focus,
 .wrapper .add-term ul li button.focus,
+.wrapper .edit-term ul li button.focus,
 .wrapper .add-term ul li button:active.focus,
-.wrapper .add-term ul li button.active.focus {
+.wrapper .edit-term ul li button:active.focus,
+.wrapper .add-term ul li button.active.focus,
+.wrapper .edit-term ul li button.active.focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 .wrapper .add-term ul li button:hover,
+.wrapper .edit-term ul li button:hover,
 .wrapper .add-term ul li button:focus,
-.wrapper .add-term ul li button.focus {
+.wrapper .edit-term ul li button:focus,
+.wrapper .add-term ul li button.focus,
+.wrapper .edit-term ul li button.focus {
   color: #333333;
   text-decoration: none;
 }
 .wrapper .add-term ul li button:active,
-.wrapper .add-term ul li button.active {
+.wrapper .edit-term ul li button:active,
+.wrapper .add-term ul li button.active,
+.wrapper .edit-term ul li button.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .wrapper .add-term ul li button.disabled,
+.wrapper .edit-term ul li button.disabled,
 .wrapper .add-term ul li button[disabled],
-fieldset[disabled] .wrapper .add-term ul li button {
+.wrapper .edit-term ul li button[disabled],
+fieldset[disabled] .wrapper .add-term ul li button,
+fieldset[disabled] .wrapper .edit-term ul li button {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -805,42 +856,70 @@ fieldset[disabled] .wrapper .add-term ul li button {
   box-shadow: none;
 }
 .wrapper .add-term ul li button:hover,
+.wrapper .edit-term ul li button:hover,
 .wrapper .add-term ul li button:focus,
+.wrapper .edit-term ul li button:focus,
 .wrapper .add-term ul li button.focus,
+.wrapper .edit-term ul li button.focus,
 .wrapper .add-term ul li button:active,
+.wrapper .edit-term ul li button:active,
 .wrapper .add-term ul li button.active,
-.open > .dropdown-toggle.wrapper .add-term ul li button {
+.wrapper .edit-term ul li button.active,
+.open > .dropdown-toggle.wrapper .add-term ul li button,
+.open > .dropdown-toggle.wrapper .edit-term ul li button {
   color: #333333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
 .wrapper .add-term ul li button:active,
+.wrapper .edit-term ul li button:active,
 .wrapper .add-term ul li button.active,
-.open > .dropdown-toggle.wrapper .add-term ul li button {
+.wrapper .edit-term ul li button.active,
+.open > .dropdown-toggle.wrapper .add-term ul li button,
+.open > .dropdown-toggle.wrapper .edit-term ul li button {
   background-image: none;
 }
 .wrapper .add-term ul li button.disabled,
+.wrapper .edit-term ul li button.disabled,
 .wrapper .add-term ul li button[disabled],
+.wrapper .edit-term ul li button[disabled],
 fieldset[disabled] .wrapper .add-term ul li button,
+fieldset[disabled] .wrapper .edit-term ul li button,
 .wrapper .add-term ul li button.disabled:hover,
+.wrapper .edit-term ul li button.disabled:hover,
 .wrapper .add-term ul li button[disabled]:hover,
+.wrapper .edit-term ul li button[disabled]:hover,
 fieldset[disabled] .wrapper .add-term ul li button:hover,
+fieldset[disabled] .wrapper .edit-term ul li button:hover,
 .wrapper .add-term ul li button.disabled:focus,
+.wrapper .edit-term ul li button.disabled:focus,
 .wrapper .add-term ul li button[disabled]:focus,
+.wrapper .edit-term ul li button[disabled]:focus,
 fieldset[disabled] .wrapper .add-term ul li button:focus,
+fieldset[disabled] .wrapper .edit-term ul li button:focus,
 .wrapper .add-term ul li button.disabled.focus,
+.wrapper .edit-term ul li button.disabled.focus,
 .wrapper .add-term ul li button[disabled].focus,
+.wrapper .edit-term ul li button[disabled].focus,
 fieldset[disabled] .wrapper .add-term ul li button.focus,
+fieldset[disabled] .wrapper .edit-term ul li button.focus,
 .wrapper .add-term ul li button.disabled:active,
+.wrapper .edit-term ul li button.disabled:active,
 .wrapper .add-term ul li button[disabled]:active,
+.wrapper .edit-term ul li button[disabled]:active,
 fieldset[disabled] .wrapper .add-term ul li button:active,
+fieldset[disabled] .wrapper .edit-term ul li button:active,
 .wrapper .add-term ul li button.disabled.active,
+.wrapper .edit-term ul li button.disabled.active,
 .wrapper .add-term ul li button[disabled].active,
-fieldset[disabled] .wrapper .add-term ul li button.active {
+.wrapper .edit-term ul li button[disabled].active,
+fieldset[disabled] .wrapper .add-term ul li button.active,
+fieldset[disabled] .wrapper .edit-term ul li button.active {
   background-color: #ffffff;
   border-color: #cccccc;
 }
-.wrapper .add-term ul li button .badge {
+.wrapper .add-term ul li button .badge,
+.wrapper .edit-term ul li button .badge {
   color: #ffffff;
   background-color: #333333;
 }

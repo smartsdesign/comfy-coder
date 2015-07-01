@@ -9,7 +9,8 @@
             'modAddTermCtrl',
             'modDeleteTermCtrl',
             'modDeletedCtrl',
-            'modEditCtrl'
+            'modEditCtrl',
+            'modEditTermCtrl'
         ]);
 
 }());

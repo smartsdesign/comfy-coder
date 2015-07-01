@@ -1,0 +1,38 @@
+<div class="edit-term">
+    <div class="sub-section">
+        <div class="top">
+            <a href="/edit"><span class="back-link"></span>go to edit list</a>
+            <h4>Edit term</h4>
+            <pre>{{edit.data}}</pre>
+        </div>
+        <form   
+            name="editForm"
+            ng-submit="edit.processFrm()"
+            novalidate
+        >
+            <ul>
+                <li>
+                    <label for="term">Term: </label>
+                    <input 
+                        type="text" 
+                        name="term" 
+                        ng-model="edit.data.term" 
+                    >
+                </li>
+                <li>
+                    <label for="definition">Definition: </label>
+                    <textarea 
+                        name="definition" 
+                        cols="30" rows="10" 
+                        ng-model="edit.data.definition" 
+                    ></textarea>
+                </li>
+                <li>
+                    <button 
+                        type="submit"  
+                    >Submit</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
