@@ -230,16 +230,18 @@ body .wrapper ul:after,
 .layout-basic .sub-section a:active {
   opacity: 0.5;
 }
-.link-type-delete:link,
-.link-type-delete:visited {
+.link-type-icon:link,
+.link-type-icon:visited {
   text-decoration: none;
 }
-.link-type-delete:hover,
-.link-type-delete:active {
+.link-type-icon:hover,
+.link-type-icon:active {
   opacity: 0.5;
 }
-.link-type-delete .delete-icon {
+.link-type-icon .delete-icon,
+.link-type-icon .edit-icon {
   padding-right: 5px;
+  top: 2px;
   position: relative;
   top: 1px;
   display: inline-block;
@@ -249,10 +251,12 @@ body .wrapper ul:after,
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  top: 2px;
 }
-.link-type-delete .delete-icon:before {
+.link-type-icon .delete-icon:before {
   content: "\e014";
+}
+.link-type-icon .edit-icon:before {
+  content: "\270f";
 }
 .icon-search {
   padding-right: 5px;
@@ -840,7 +844,8 @@ fieldset[disabled] .wrapper .add-term ul li button.active {
   color: #ffffff;
   background-color: #333333;
 }
-.amend-wrapper ul li .term {
+.amend-wrapper ul li .term,
+.edit-wrapper ul li .term {
   box-sizing: border-box;
   position: relative;
   min-height: 1px;
@@ -848,18 +853,21 @@ fieldset[disabled] .wrapper .add-term ul li button.active {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .amend-wrapper ul li .term {
+  .amend-wrapper ul li .term,
+  .edit-wrapper ul li .term {
     float: left;
     width: 75%;
   }
 }
 @media (min-width: 992px) {
-  .amend-wrapper ul li .term {
+  .amend-wrapper ul li .term,
+  .edit-wrapper ul li .term {
     float: left;
     width: 75%;
   }
 }
-.amend-wrapper ul li .utils {
+.amend-wrapper ul li .utils,
+.edit-wrapper ul li .utils {
   box-sizing: border-box;
   position: relative;
   min-height: 1px;
@@ -867,32 +875,43 @@ fieldset[disabled] .wrapper .add-term ul li button.active {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .amend-wrapper ul li .utils {
+  .amend-wrapper ul li .utils,
+  .edit-wrapper ul li .utils {
     float: left;
     width: 25%;
   }
 }
 @media (min-width: 992px) {
-  .amend-wrapper ul li .utils {
+  .amend-wrapper ul li .utils,
+  .edit-wrapper ul li .utils {
     float: left;
     width: 25%;
   }
 }
 @media (max-width: 767px) {
-  .amend-wrapper ul li .utils {
+  .amend-wrapper ul li .utils,
+  .edit-wrapper ul li .utils {
     display: block;
   }
 }
 .amend-wrapper ul li .utils a:link,
-.amend-wrapper ul li .utils a:visited {
+.edit-wrapper ul li .utils a:link,
+.amend-wrapper ul li .utils a:visited,
+.edit-wrapper ul li .utils a:visited {
   text-decoration: none;
 }
 .amend-wrapper ul li .utils a:hover,
-.amend-wrapper ul li .utils a:active {
+.edit-wrapper ul li .utils a:hover,
+.amend-wrapper ul li .utils a:active,
+.edit-wrapper ul li .utils a:active {
   opacity: 0.5;
 }
-.amend-wrapper ul li .utils a .delete-icon {
+.amend-wrapper ul li .utils a .delete-icon,
+.edit-wrapper ul li .utils a .delete-icon,
+.amend-wrapper ul li .utils a .edit-icon,
+.edit-wrapper ul li .utils a .edit-icon {
   padding-right: 5px;
+  top: 2px;
   position: relative;
   top: 1px;
   display: inline-block;
@@ -902,13 +921,18 @@ fieldset[disabled] .wrapper .add-term ul li button.active {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  top: 2px;
 }
-.amend-wrapper ul li .utils a .delete-icon:before {
+.amend-wrapper ul li .utils a .delete-icon:before,
+.edit-wrapper ul li .utils a .delete-icon:before {
   content: "\e014";
 }
+.amend-wrapper ul li .utils a .edit-icon:before,
+.edit-wrapper ul li .utils a .edit-icon:before {
+  content: "\270f";
+}
 @media (max-width: 767px) {
-  .amend-wrapper ul li .utils a {
+  .amend-wrapper ul li .utils a,
+  .edit-wrapper ul li .utils a {
     padding: 10px 0;
   }
 }

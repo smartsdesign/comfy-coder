@@ -1,0 +1,20 @@
+<div class="edit-wrapper">
+    <div class="filter">
+        <form>
+            <span class="search-icon"></span>
+            <input type="text" name="filter" ng-model="glossaryList.term">
+        </form>
+    </div>
+    <div>
+        <ul class="definition-list">
+            <li ng-repeat="item in edit.glossaryList | filter:glossaryList">
+                <span class="term">
+                    {{item.term}}
+                </span>
+                <span class="utils">
+                    <a href="#" ng-click="edit.updateTerm(item.term)"><span class="edit-icon"></span>Edit...</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

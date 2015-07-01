@@ -39,6 +39,11 @@
                 "controller": "deletedTermController",
                 "controllerAs": "isdeleted"
             })
+            .when("/edit", {
+                "templateUrl": "ng-views/edit-list.html",
+                "controller": "editController",
+                "controllerAs": "edit"
+            })
             .otherwise({
                 "redirectTo": "/"
             });

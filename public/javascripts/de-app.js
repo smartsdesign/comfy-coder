@@ -8,7 +8,8 @@
             'modGlosDefsCtrl',
             'modAddTermCtrl',
             'modDeleteTermCtrl',
-            'modDeletedCtrl'
+            'modDeletedCtrl',
+            'modEditCtrl'
         ]);
 
 }());

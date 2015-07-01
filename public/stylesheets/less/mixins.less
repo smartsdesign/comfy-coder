@@ -123,7 +123,7 @@
   .text-hide();
 }
 
-.link-type-delete{
+.link-type-icon{
   &:link,
   &:visited {
     text-decoration: none;
@@ -133,12 +133,20 @@
   &:active {
     opacity: 0.5;
   }
+
+  .delete-icon,
+  .edit-icon {
+    padding-right: 5px;
+    top: 2px;
+    .glyphicon();
+  }
   
   .delete-icon {
-    padding-right: 5px;
-    .glyphicon();
     .glyphicon-remove();
-    top: 2px;
+  }
+
+  .edit-icon {
+    .glyphicon-pencil();
   }
 
 }

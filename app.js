@@ -14,6 +14,7 @@ var routes = require('./routes/index');
 var glossary = require('./routes/glossary');
 var newdefintion = require('./routes/add-term');
 var deletedefinition = require('./routes/delete-term');
+var editdefinition = require('./routes/edit-term');
 var users = require('./routes/users');
 
 var app = express();
@@ -40,6 +41,7 @@ app.use('/', routes);
 app.use('/glossary', glossary);
 app.use('/newdefinition', newdefintion);
 app.use('/deletedefinition', deletedefinition);
+app.use('/editdefinition', editdefinition);
 app.use('/users', users);
 
 //middleware: point to index page for all points of entry. - Fixes 404 errors om refresh
