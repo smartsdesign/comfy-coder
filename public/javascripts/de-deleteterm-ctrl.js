@@ -10,10 +10,11 @@
 			"glossaryService",
 			"$log",
 			"$window",
+			"SweetAlert",
 			deleteTermController
 		]);
 
-		function deleteTermController(glossaryService, $log, $window){
+		function deleteTermController(glossaryService, $log, $window, SweetAlert){
 			var vm = this, //jshint ignore: line
 				onSuccess = function(data){
 					vm.glossaryList = data[0].definitions;
@@ -24,9 +25,17 @@
 				};
 
 			vm.deleteItem = function(item){
-				if(confirm("Are you sure you want to expunge " + item)){ /*TODO - move confirm to a directive as is a UI element*/
-					$window.location.href = "/deleteterm/" + item;
-				}
+				SweetAlert.swal({
+					"title": "Expunge "  + item + "?",
+					"type": "warning",
+					"showCancelButton": true,
+					"confirmButtonText": "Yes, expunge!",
+					"cancelButtonText": "No, cancel!"
+				}, function(isConfirm){
+					if(isConfirm){
+						$window.location.href = "/deleteterm/" + item;
+					}
+				});
 			};
 
 			//fetch list

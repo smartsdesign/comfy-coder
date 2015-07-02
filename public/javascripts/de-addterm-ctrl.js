@@ -8,11 +8,12 @@
         .controller('addTermController', [
             '$log',
             '$window',
-            '$http', 
+            '$http',
+            'SweetAlert', 
             addTermController
         ]);
 
-        function addTermController($log, $window, $http){
+        function addTermController($log, $window, $http, SweetAlert){
             
             var vm = this; //jshint ignore: line
             vm.data = {};
@@ -23,7 +24,10 @@
                     .post('newdefinition/addterm', vm.data)
                     .success(function(response){
                         $log.log(response);
-                        $window.alert(vm.data.term + ' - was added successfully!');
+                        SweetAlert.swal({
+                            "title": vm.data.term + " was added successfully",
+                            "type": "success"
+                        });
                         vm.data = {};
                     });
             };

@@ -11,10 +11,11 @@
 			"$log",
 			"$http",
 			"glossaryService",
+			"SweetAlert",
 			editTermController
 		]);
 
-		function editTermController($window, $log, $http, glossaryService){
+		function editTermController($window, $log, $http, glossaryService, SweetAlert){
 
 			var vm = this; //jshint ignore: line
 			vm.data = {};
@@ -26,12 +27,20 @@
 			 	};
 
 			vm.processFrm = function(){
-				if(confirm("Sure? ")){
-					$log.log(vm.data);
-
-					// post data to mongoDB
-					// $window.location.href = "/definition/" + vm.data.term;
-				}
+				
+				SweetAlert.swal({
+					"title": "Are you sure?",
+					"type": "warning",
+					"showCancelButton": true,
+					"confirmButtonText": "Yes, update!",
+					"cancelButtonText": "No, cancel!"
+				}, function(isConfirm){
+					if(isConfirm){
+						$log.log(vm.data);
+					}else{
+						SweetAlert.swal("Cancelled");
+					}
+				});
 			};
 
 			//fetch term

@@ -3,6 +3,7 @@
 
     angular
         .module('glosApp', [
+            'oitozero.ngSweetAlert',
             'modGlosRoutes',
             'modGlosMainCtrl',
             'modGlosDefsCtrl',
