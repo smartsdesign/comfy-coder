@@ -9,11 +9,12 @@
 		.controller("editTermController", [
 			"$window",
 			"$log",
+			"$http",
 			"glossaryService",
 			editTermController
 		]);
 
-		function editTermController($window, $log, glossaryService){
+		function editTermController($window, $log, $http, glossaryService){
 
 			var vm = this; //jshint ignore: line
 			vm.data = {};
@@ -26,7 +27,10 @@
 
 			vm.processFrm = function(){
 				if(confirm("Sure? ")){
-					$window.location.href = "/definition/" + vm.data.term;
+					$log.log(vm.data);
+
+					// post data to mongoDB
+					// $window.location.href = "/definition/" + vm.data.term;
 				}
 			};
 
