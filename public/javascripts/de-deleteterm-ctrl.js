@@ -29,8 +29,8 @@
 					"title": "Expunge "  + item + "?",
 					"type": "warning",
 					"showCancelButton": true,
-					"confirmButtonText": "Yes, expunge!",
-					"cancelButtonText": "No, cancel!"
+					"confirmButtonText": "Yes, expunge",
+					"cancelButtonText": "No, cancel"
 				}, function(isConfirm){
 					if(isConfirm){
 						$window.location.href = "/deleteterm/" + item;

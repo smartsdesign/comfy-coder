@@ -32,8 +32,8 @@
 					"title": "Are you sure?",
 					"type": "warning",
 					"showCancelButton": true,
-					"confirmButtonText": "Yes, update!",
-					"cancelButtonText": "No, cancel!"
+					"confirmButtonText": "Yes, update",
+					"cancelButtonText": "No, cancel"
 				}, function(isConfirm){
 					if(isConfirm){
 						$log.log(vm.data);
