@@ -49,6 +49,9 @@
                 "controller": "editTermController",
                 "controllerAs": "edit"
             })
+            .when("/cpanel", {
+                "templateUrl": "ng-views/cpanel.html"
+            })
             .otherwise({
                 "redirectTo": "/"
             });

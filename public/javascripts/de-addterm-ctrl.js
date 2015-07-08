@@ -25,10 +25,13 @@
                     .success(function(response){
                         $log.log(response);
                         SweetAlert.swal({
-                            "title": vm.data.term + " was added successfully",
-                            "type": "success"
+                            "title": "Job done!",
+                            "text": vm.data.term + " hadd been added",
+                            "type": "success",
+                            "closeOnConfirm": false
+                        }, function(){
+                            $window.location.href = "/";
                         });
-                        vm.data = {};
                     });
             };
         }

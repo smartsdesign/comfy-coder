@@ -7,7 +7,7 @@
         </div>
         <form   
             name="editForm"
-            ng-submit="edit.processFrm()"
+            ng-submit="edit.processFrm(editForm)"
             novalidate
         >
             <ul>
@@ -17,6 +17,7 @@
                         type="text" 
                         name="term" 
                         ng-model="edit.data.term" 
+                        disabled 
                     >
                 </li>
                 <li>

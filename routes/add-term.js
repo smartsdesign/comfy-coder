@@ -14,7 +14,7 @@ addTermRouter.post('/addterm', function (req, res){
     			definitions: req.body
     		}
     	}, function(err, result){
-    		res.send((err === null) ? {'msg': req.body.term + ' has been added successfully!'} : {'msg': 'error' + error});
+    		res.send((err === null) ? {'msg': req.body.term + ' has been added successfully!'} : {'msg': 'error' + err});
     	});
 });
 

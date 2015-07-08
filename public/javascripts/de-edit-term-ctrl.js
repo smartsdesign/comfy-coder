@@ -15,7 +15,13 @@
 			editTermController
 		]);
 
-		function editTermController($window, $log, $http, glossaryService, SweetAlert){
+		function editTermController(
+			$window, 
+			$log, 
+			$http,  
+			glossaryService, 
+			SweetAlert
+		){
 
 			var vm = this; //jshint ignore: line
 			vm.data = {};
@@ -24,21 +30,41 @@
 			 	},
 			 	onErr = function(error){
 			 		$log.log(error);
+			 	},
+			 	onEditSuccess = function(response){
+			 		$log.log(response);
+			 	},
+			 	onEditErr = function(err){
+			 		$log.log(err);
 			 	};
 
-			vm.processFrm = function(){
+			vm.processFrm = function(form){
 				
 				SweetAlert.swal({
-					"title": "Are you sure?",
+					"title": "Update " + vm.data.term + "?",
 					"type": "warning",
 					"showCancelButton": true,
 					"confirmButtonText": "Yes, update",
-					"cancelButtonText": "No, cancel"
+					"cancelButtonText": "No, cancel",
+					"closeOnConfirm": false
 				}, function(isConfirm){
-					if(isConfirm){
-						$log.log(vm.data);
+					if(isConfirm && form.$dirty){
+						$http
+							.post('editdefinition/term', vm.data)
+							.success(function(response){
+								swal({
+									"title": "Job done!",
+									"text": response.msg,
+									"closeOnConfirm": true
+								}, function(){
+									$window.location.href = '/definition/' + vm.data.term;
+								});
+							})
+							.error(function(err){
+								swal("Oops!", "We have a server error", "error");
+							});
 					}else{
-						SweetAlert.swal("Cancelled");
+						swal("Oops!", "Nothing changed", "error");
 					}
 				});
 			};
