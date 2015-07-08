@@ -36,13 +36,15 @@ body {
 
          header {
             .jumbotron();
-            @media(min-width: @screen-sm-min){
+            @media(max-width: @screen-xs-max){
                 padding: 30px 15px;
             }
             margin-bottom: 0;
 
             h3, h4 {
-                padding: 0 35px;
+                @media(min-width: @screen-sm-min){
+                    padding: 0 35px;
+                }
                 margin: 0;
             }
 
