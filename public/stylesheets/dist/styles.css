@@ -169,8 +169,10 @@ body .wrapper ul:after,
 .link-type-back:visited .back-link:before {
   content: "\e132";
 }
-.link-type-back:hover,
-.link-type-back:active {
+.link-type-back:link:hover,
+.link-type-back:visited:hover,
+.link-type-back:link:active,
+.link-type-back:visited:active {
   opacity: 0.5;
 }
 .layout-basic {
@@ -230,8 +232,10 @@ body .wrapper ul:after,
 .layout-basic .sub-section a:visited .back-link:before {
   content: "\e132";
 }
-.layout-basic .sub-section a:hover,
-.layout-basic .sub-section a:active {
+.layout-basic .sub-section a:link:hover,
+.layout-basic .sub-section a:visited:hover,
+.layout-basic .sub-section a:link:active,
+.layout-basic .sub-section a:visited:active {
   opacity: 0.5;
 }
 .link-type-icon:link,
@@ -647,8 +651,8 @@ body .wrapper ul li a:visited {
   color: #000;
   text-decoration: none;
 }
-body .wrapper ul li:hover,
-body .wrapper ul li:active {
+body .wrapper ul li a:hover,
+body .wrapper ul li a:active {
   opacity: 0.5;
 }
 .definitions-wrapper {
@@ -708,8 +712,10 @@ body .wrapper ul li:active {
 .definitions-wrapper .sub-section a:visited .back-link:before {
   content: "\e132";
 }
-.definitions-wrapper .sub-section a:hover,
-.definitions-wrapper .sub-section a:active {
+.definitions-wrapper .sub-section a:link:hover,
+.definitions-wrapper .sub-section a:visited:hover,
+.definitions-wrapper .sub-section a:link:active,
+.definitions-wrapper .sub-section a:visited:active {
   opacity: 0.5;
 }
 .definitions-wrapper h2 {
@@ -789,10 +795,14 @@ body .wrapper ul li:active {
 .edit-term .top a:visited .back-link:before {
   content: "\e132";
 }
-.add-term .top a:hover,
-.edit-term .top a:hover,
-.add-term .top a:active,
-.edit-term .top a:active {
+.add-term .top a:link:hover,
+.edit-term .top a:link:hover,
+.add-term .top a:visited:hover,
+.edit-term .top a:visited:hover,
+.add-term .top a:link:active,
+.edit-term .top a:link:active,
+.add-term .top a:visited:active,
+.edit-term .top a:visited:active {
   opacity: 0.5;
 }
 .wrapper .add-term ul li,
@@ -1179,8 +1189,10 @@ fieldset[disabled] .wrapper .edit-term ul li button.active {
 .is-deleted .sub-section a:visited .back-link:before {
   content: "\e132";
 }
-.is-deleted .sub-section a:hover,
-.is-deleted .sub-section a:active {
+.is-deleted .sub-section a:link:hover,
+.is-deleted .sub-section a:visited:hover,
+.is-deleted .sub-section a:link:active,
+.is-deleted .sub-section a:visited:active {
   opacity: 0.5;
 }
 .is-deleted .sub-section p {
@@ -1195,8 +1207,7 @@ fieldset[disabled] .wrapper .edit-term ul li button.active {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .wrapper .cpanel ul li {
@@ -1208,6 +1219,10 @@ fieldset[disabled] .wrapper .edit-term ul li button.active {
   .wrapper .cpanel ul li {
     margin-left: 33.33333333%;
   }
+}
+.wrapper .cpanel ul li a,
+.wrapper .cpanel ul li span {
+  padding: 10px;
 }
 .wrapper .cpanel ul li a {
   float: left;
