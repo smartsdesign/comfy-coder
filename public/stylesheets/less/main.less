@@ -40,10 +40,12 @@ body {
                 padding: 30px 15px;
             }
             margin-bottom: 0;
+            .make-sm-column(10);
+            .make-sm-column-offset(1);
 
             h3, h4 {
                 @media(min-width: @screen-sm-min){
-                    padding: 0 35px;
+                    padding: 0;
                 }
                 margin: 0;
             }
@@ -106,7 +108,7 @@ body {
                     }
 
                 }
-                
+
                 &:hover,
                 &:active {
                     opacity: 0.5;

@@ -183,23 +183,27 @@ body .wrapper ul:after,
 .layout-basic .sub-section {
   box-sizing: border-box;
   float: left;
-  width: 83.33333333%;
-  margin-left: 8.33333333%;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .layout-basic .sub-section {
     float: left;
     width: 83.33333333%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .layout-basic .sub-section {
     margin-left: 8.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .layout-basic .sub-section {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .layout-basic .sub-section a:link,
@@ -272,7 +276,7 @@ body .wrapper ul:after,
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-search:before {
-  content: "\e003";
+  content: "\e138";
 }
 .icon-add {
   position: relative;
@@ -368,6 +372,10 @@ body .wrapper header {
   color: inherit;
   background-color: #eeeeee;
   margin-bottom: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 body .wrapper header h1,
 body .wrapper header .h1 {
@@ -407,6 +415,17 @@ body .wrapper header .container {
     padding: 30px 15px;
   }
 }
+@media (min-width: 768px) {
+  body .wrapper header {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  body .wrapper header {
+    margin-left: 8.33333333%;
+  }
+}
 body .wrapper header h3,
 body .wrapper header h4 {
   margin: 0;
@@ -414,7 +433,7 @@ body .wrapper header h4 {
 @media (min-width: 768px) {
   body .wrapper header h3,
   body .wrapper header h4 {
-    padding: 0 35px;
+    padding: 0;
   }
 }
 body .wrapper header h3 {
@@ -479,7 +498,7 @@ body .wrapper .filter form .search-icon {
   }
 }
 body .wrapper .filter form .search-icon:before {
-  content: "\e003";
+  content: "\e138";
 }
 body .wrapper .filter form input {
   box-sizing: border-box;
@@ -642,23 +661,27 @@ body .wrapper ul li:active {
 .definitions-wrapper .sub-section {
   box-sizing: border-box;
   float: left;
-  width: 83.33333333%;
-  margin-left: 8.33333333%;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .definitions-wrapper .sub-section {
     float: left;
     width: 83.33333333%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .definitions-wrapper .sub-section {
     margin-left: 8.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .definitions-wrapper .sub-section {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .definitions-wrapper .sub-section a:link,
@@ -688,6 +711,17 @@ body .wrapper ul li:active {
 .definitions-wrapper .sub-section a:hover,
 .definitions-wrapper .sub-section a:active {
   opacity: 0.5;
+}
+.definitions-wrapper h2 {
+  padding: 30px 10px 30px 30px;
+  background-color: #5f9ea0;
+  color: #f5deb3;
+  margin-bottom: 0;
+}
+.definitions-wrapper p {
+  padding: 30px 10px 30px 30px;
+  margin-top: 0;
+  background-color: #f5f5f5;
 }
 .add-term .top,
 .edit-term .top {
@@ -1098,23 +1132,27 @@ fieldset[disabled] .wrapper .edit-term ul li button.active {
 .is-deleted .sub-section {
   box-sizing: border-box;
   float: left;
-  width: 83.33333333%;
-  margin-left: 8.33333333%;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .is-deleted .sub-section {
     float: left;
     width: 83.33333333%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .is-deleted .sub-section {
     margin-left: 8.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .is-deleted .sub-section {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .is-deleted .sub-section a:link,

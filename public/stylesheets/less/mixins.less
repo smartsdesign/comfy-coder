@@ -100,11 +100,13 @@
     
     .sub-section {
         box-sizing: border-box;
-        .make-xs-column(10);
-        .make-xs-column-offset(1);
-        .make-md-column(10);
-        .make-md-column-offset(1);
-        padding-left: 0;
+        .make-xs-column(12);
+        .make-sm-column(10);
+        .make-sm-column-offset(1);
+        @media (min-width: @screen-sm-min){
+          padding-left: 0;
+          padding-right: 0;
+        }
 
         h2 {  
         }
@@ -155,7 +157,7 @@
   padding-right: 5px;
   font-size: 21px;
   .glyphicon();
-  .glyphicon-search();
+  .glyphicon-filter();
 }
 .icon-add {
   .glyphicon();
