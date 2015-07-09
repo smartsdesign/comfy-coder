@@ -274,6 +274,62 @@ body .wrapper ul:after,
 .icon-search:before {
   content: "\e003";
 }
+.icon-add {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-add:before {
+  content: "\2b";
+}
+.icon-edit {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-edit:before {
+  content: "\270f";
+}
+.icon-delete {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-delete:before {
+  content: "\e014";
+}
+.icon-list {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-list:before {
+  content: "\e056";
+}
 body {
   font: 14px consolas, sans-serif;
   background: #eeeeee;
@@ -572,8 +628,8 @@ body .wrapper ul li a:visited {
   color: #000;
   text-decoration: none;
 }
-body .wrapper ul li a:hover,
-body .wrapper ul li a:active {
+body .wrapper ul li:hover,
+body .wrapper ul li:active {
   opacity: 0.5;
 }
 .definitions-wrapper {
@@ -1093,6 +1149,7 @@ fieldset[disabled] .wrapper .edit-term ul li button.active {
   font-size: 22px;
 }
 .wrapper .cpanel ul li {
+  box-sizing: border-box;
   float: left;
   width: 83.33333333%;
   margin-left: 8.33333333%;
@@ -1100,6 +1157,8 @@ fieldset[disabled] .wrapper .edit-term ul li button.active {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media (min-width: 768px) {
   .wrapper .cpanel ul li {
@@ -1111,4 +1170,88 @@ fieldset[disabled] .wrapper .edit-term ul li button.active {
   .wrapper .cpanel ul li {
     margin-left: 33.33333333%;
   }
+}
+.wrapper .cpanel ul li a {
+  float: left;
+  width: 25%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .wrapper .cpanel ul li a {
+    float: left;
+    width: 50%;
+  }
+}
+.wrapper .cpanel ul li span {
+  float: left;
+  width: 8.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .wrapper .cpanel ul li span {
+    float: left;
+    width: 8.33333333%;
+  }
+}
+.wrapper .cpanel ul li .add-icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrapper .cpanel ul li .add-icon:before {
+  content: "\2b";
+}
+.wrapper .cpanel ul li .edit-icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrapper .cpanel ul li .edit-icon:before {
+  content: "\270f";
+}
+.wrapper .cpanel ul li .delete-icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrapper .cpanel ul li .delete-icon:before {
+  content: "\e014";
+}
+.wrapper .cpanel ul li .list-icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrapper .cpanel ul li .list-icon:before {
+  content: "\e056";
 }
