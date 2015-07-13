@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { 
   	'title': 'Web terminology wiki',
-  	'description': 'A definition list of commonly used development terminology' 
+  	'description': 'Web development jargon explained' 
   });
 });
 

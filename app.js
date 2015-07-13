@@ -49,7 +49,7 @@ app.use('/users', users);
 app.get('*', function(req, res){
     res.render('index', { 
     'title': 'Web terminology wiki',
-    'description': 'A definition list of commonly used development terminology' 
+    'description': 'Web development jargon explained' 
   });
 });
 
